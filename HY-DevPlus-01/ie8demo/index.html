@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DevPlus - I</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+
+	
+	<!-- 
+	========================================================================
+	
+	DevPlus I
+	Topic: IE8 & old browser support
+	Author: Haris Mahmood <meetharis.com>
+
+	The following is an 'if' statement in your HTML that asks the browser to only load resources when the statement is true. In this case, we are loading the following if our IE browser version is LESS THAN IE9:
+	
+	1. ie8.css: A browser specific stylesheet with overrides
+	2. html5shiv.js: Allows rendering/styling of HTML5 elements
+	3. placeholders.js: A polyfill for form placeholder text
+
+	========================================================================
+	 -->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="ie8.css">
+		<script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+		<script src="http://jamesallardice.github.io/Placeholders.js/assets/js/placeholders.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div class="container">
+		<h1 class="u-alignCenter">IE8 Support Examples</h1>
+
+		<div class="block shivs">
+			<h2>Example 01 - Shiv (Shim)</h2>
+			<p>HTML5 introduced a lot of new tags: header, footer, article, aside, etc. Lets see what we can do for them.</p>
+			<footer>Eyyo I am le footeur. &copy; DevPlus</footer>
+		</div>
+
+		<div class="block checkselect">
+			<h2>Example 02 - Stylesheets</h2>
+			<p>Certain elements aren't as easy to play with as input fields. Lets take a look at these fancy checkboxes.</p>
+			<hr>
+			<input type="checkbox" name="checkbox" id="checkbox_one" value="value">
+			<label for="checkbox_one">I am the label, fool.</label>
+		</div>
+
+
+		<div class="block inputfields">
+			<h2>Example 03 - Alternate Styling + Polyfills</h2>
+			<p>Lets start off with input fields. Pay specific attention to placeholder text.</p>
+			<hr>
+			<input type="text" placeholder="Placehold your FACE.">
+		</div>
+	</div>
+</body>
+
+
+</html>
+
+<!--
+1. Pitfalls
+2. Lack of support
+3. Hacks VS standardize
+4. Browser specific overrides
+5. html5shiv
+6. Firebug LITE
+7. Polyfils
+
+-->
+

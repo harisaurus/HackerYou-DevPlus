@@ -1,0 +1,120 @@
+/* CSS RESET + BASE STYLES
+====================================== */
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+body,
+ul,
+ol,
+p,
+h1,
+h2,{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	width: 100%;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: #f5f5f5;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 1100px;
+	margin: 20px auto;
+	padding: 10px 30px;
+	background-color: white;
+}
+
+.block{
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin-bottom: 100px;
+	padding: 20px;
+}
+
+hr{
+	margin: 30px 0;
+	border-color: #f5f5f5;
+	border-style: solid;
+}
+
+/* HELPERS
+====================================== */
+.u-alignCenter{
+	text-align: center;
+}
+
+
+/* shivs
+====================================== */
+.shivs footer{
+	background-color: #333;
+	padding: 30px;
+	text-align: center;
+	color: white;
+}
+
+
+
+
+/* inputfields
+====================================== */
+.inputfields input{
+	border: 2px solid #e5e5e5;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 15px;
+	display: block;
+	width: 50%;
+	/* The following 3 lines remove default mobile styling to allow for custom css */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+
+/* checkselect
+====================================== */
+.checkselect label:before{
+	content: 'X';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #e5e5e5;
+	border: 3px solid #d8d8d8;
+	border-radius: 3px;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 21px;
+	color: rgba(0,0,0,0);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+
+}
+
+.checkselect label{
+	line-height: 25px;
+	position: relative;
+}
+
+.checkselect input:checked+label:before{
+	color: rgba(150,150,150,1);
+	border-color: #3498db;
+}
+
+.checkselect input{
+	display: none;
+}
+
