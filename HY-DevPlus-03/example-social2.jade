@@ -1,0 +1,7 @@
+// Loop through key+value pairs to create list of links
+- social2 = { facebook: "www.facebook.com/harismahmood89", twitter: "www.twitter.com/harismahmoo89", website: "www.meetharis.com"}
+
+ul.social2
+  each val, key in social2
+    li
+      a(href="#{val}") #{key}

@@ -1,0 +1,9 @@
+// mixins to create content blocks
+mixin section(quote, author)
+  .section
+    .quoteText
+      p #{quote} – said by
+        b #{author}
+
++section("Imagination is more important than knowledge", "Albert Einstein")
++section("Writing, to me, is simply thinking through my fingers.", "Isaac Asimov")

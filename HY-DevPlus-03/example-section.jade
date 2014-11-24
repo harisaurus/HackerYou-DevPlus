@@ -1,0 +1,8 @@
+// Loop through array elements and created numbered list elements
+- names = ["Apple", "Microsoft", "Oracle"]
+
+.section
+  h4 Sample header
+  ul
+    each name, i in names
+      li #{i+1}: #{name}

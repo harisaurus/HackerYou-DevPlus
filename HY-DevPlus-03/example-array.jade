@@ -1,0 +1,8 @@
+// mixins to convert array to dropdown
+mixin listData(selectId, options)
+  select(id="#{selectId}")
+    each obj in options
+      option(value="#{obj}") #{obj}
+
+- var countries= ['UK', 'USA', 'CANADA', 'MEXICO']
++listData("countrySelect", countries)
